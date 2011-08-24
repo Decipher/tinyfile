@@ -1,5 +1,5 @@
 name = tinyFile
-description = TODO
+description = Desktop to Mobile file sharing.
 package = Mobile
 core = 6.x
 
@@ -19,6 +19,7 @@ dependencies[] = "shorten"
 dependencies[] = "shorturl"
 dependencies[] = "strongarm"
 dependencies[] = "token"
+dependencies[] = "views"
 
 features[content][] = "tinyfile-field_tinyfile_file"
 features[ctools][] = "strongarm:strongarm:1"
@@ -49,3 +50,5 @@ features[variable][] = "node_options_tinyfile"
 features[variable][] = "nodeformscols_field_placements_tinyfile_default"
 features[variable][] = "shorten_service"
 features[variable][] = "shorten_www"
+features[views][] = "tinyFile"
+features[views_api][] = "api:2"

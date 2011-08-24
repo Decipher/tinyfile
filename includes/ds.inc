@@ -16,7 +16,7 @@ function tinyfile_ds_default_settings() {
             'field_tinyfile_file' => array(
               'region' => 'middle',
               'weight' => '-19',
-              'format' => 'mobile_codes_filefield_large',
+              'format' => 'custom_formatters_tinyfile',
               'css-class' => '',
               'labelformat' => 'hidden',
             ),

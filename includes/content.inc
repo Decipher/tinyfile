@@ -36,7 +36,7 @@ function tinyfile_content_default_fields() {
         'label' => array(
           'format' => 'hidden',
         ),
-        'format' => 'mobile_codes_filefield_large',
+        'format' => 'custom_formatters_tinyfile',
         'css-class' => '',
         'region' => 'middle',
         'type' => 'filefield',
