@@ -1,0 +1,30 @@
+/**
+ * @file
+ * Contains core styles for the tinyFile module.
+ */
+
+#edit-field-tinyfile-file-0-ahah-wrapper {
+  border: 2px dashed;
+  border-radius: 5px;
+  display: block;
+  height: 100%;
+  min-height: 100px;
+  position: relative;
+  width: 100%;
+}
+
+#edit-field-tinyfile-file-0-ahah-wrapper .drophere,
+#edit-field-tinyfile-file-0-ahah-wrapper img {
+  font-size: 2em;
+  left: 40%;
+  position: absolute;
+  top: 40%;
+}
+
+#edit-field-tinyfile-file-0-ahah-wrapper img {
+  left: 49%;
+}
+
+#edit-field-tinyfile-file-0-upload-wrapper {
+  visibility: hidden;
+}

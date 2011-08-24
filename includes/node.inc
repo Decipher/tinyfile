@@ -38,7 +38,12 @@ function node_tinyfile_form_alter_alter($form, $form_state, $form_id) {
  * Form callback; After build.
  */
 function tinyfile_node_form_after_build($element) {
+  drupal_add_js(array('tinyFilePath' => drupal_get_path('module', 'tinyfile')), 'setting');
   drupal_add_js(drupal_get_path('module', 'tinyfile') . '/tinyfile.js');
+  drupal_add_css(drupal_get_path('module', 'tinyfile') . '/tinyfile.css');
+
+  $element['field_tinyfile_file'][0]['#prefix'] .= '<div class="drophere">' . t('Drop file here') . '</div>';
+
   return $element;
 }
 
