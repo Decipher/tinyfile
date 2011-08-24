@@ -15,8 +15,18 @@ function tinyfile_content_default_fields() {
     'field_name' => 'field_tinyfile_file',
     'type_name' => 'tinyfile',
     'display_settings' => array(
+      'weight' => '31',
+      'parent' => '',
       'label' => array(
         'format' => 'hidden',
+      ),
+      'teaser' => array(
+        'format' => 'custom_formatters_tinyfile',
+        'exclude' => 0,
+      ),
+      'full' => array(
+        'format' => 'custom_formatters_tinyfile',
+        'exclude' => 0,
       ),
       'format' => 'default',
       'css-class' => array(),
@@ -35,16 +45,6 @@ function tinyfile_content_default_fields() {
         'label_value' => '',
         'exclude' => 0,
         'weight' => '-19',
-      ),
-      'weight' => '31',
-      'parent' => '',
-      'teaser' => array(
-        'format' => 'mobile_codes_filefield_block_node_url',
-        'exclude' => 0,
-      ),
-      'full' => array(
-        'format' => 'mobile_codes_filefield_block_node_url',
-        'exclude' => 0,
       ),
       '4' => array(
         'format' => 'default',

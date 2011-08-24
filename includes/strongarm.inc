@@ -9,118 +9,133 @@
  */
 function tinyfile_strongarm() {
   $export = array();
+
   $strongarm = new stdClass;
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'ant_pattern_tinyfile';
   $strongarm->value = 'tinyFile: [field_tinyfile_file-filefield-filename] ([yyyy]-[mm]-[dd])';
-
   $export['ant_pattern_tinyfile'] = $strongarm;
+
   $strongarm = new stdClass;
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'ant_php_tinyfile';
   $strongarm->value = 0;
-
   $export['ant_php_tinyfile'] = $strongarm;
+
   $strongarm = new stdClass;
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'ant_tinyfile';
   $strongarm->value = '1';
-
   $export['ant_tinyfile'] = $strongarm;
+
   $strongarm = new stdClass;
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'comment_anonymous_tinyfile';
   $strongarm->value = 0;
-
   $export['comment_anonymous_tinyfile'] = $strongarm;
+
   $strongarm = new stdClass;
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'comment_controls_tinyfile';
   $strongarm->value = '3';
-
   $export['comment_controls_tinyfile'] = $strongarm;
+
   $strongarm = new stdClass;
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'comment_default_mode_tinyfile';
   $strongarm->value = '4';
-
   $export['comment_default_mode_tinyfile'] = $strongarm;
+
   $strongarm = new stdClass;
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'comment_default_order_tinyfile';
   $strongarm->value = '1';
-
   $export['comment_default_order_tinyfile'] = $strongarm;
+
   $strongarm = new stdClass;
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'comment_default_per_page_tinyfile';
   $strongarm->value = '50';
-
   $export['comment_default_per_page_tinyfile'] = $strongarm;
+
   $strongarm = new stdClass;
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'comment_form_location_tinyfile';
   $strongarm->value = '0';
-
   $export['comment_form_location_tinyfile'] = $strongarm;
+
   $strongarm = new stdClass;
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'comment_preview_tinyfile';
   $strongarm->value = '1';
-
   $export['comment_preview_tinyfile'] = $strongarm;
+
   $strongarm = new stdClass;
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'comment_subject_field_tinyfile';
   $strongarm->value = '1';
-
   $export['comment_subject_field_tinyfile'] = $strongarm;
+
   $strongarm = new stdClass;
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'comment_tinyfile';
   $strongarm->value = '2';
-
   $export['comment_tinyfile'] = $strongarm;
+
   $strongarm = new stdClass;
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'dragndrop_uploads_formatter_tinyfile';
   $strongarm->value = 'default';
-
   $export['dragndrop_uploads_formatter_tinyfile'] = $strongarm;
+
   $strongarm = new stdClass;
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'dragndrop_uploads_hide_tinyfile';
   $strongarm->value = 0;
-
   $export['dragndrop_uploads_hide_tinyfile'] = $strongarm;
+
   $strongarm = new stdClass;
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'dragndrop_uploads_widget_tinyfile';
   $strongarm->value = 'a:3:{s:5:"field";s:19:"field_tinyfile_file";s:6:"module";s:9:"filefield";s:6:"widget";s:9:"filefield";}';
-
   $export['dragndrop_uploads_widget_tinyfile'] = $strongarm;
+
   $strongarm = new stdClass;
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'formblock_expose_tinyfile';
   $strongarm->value = '1';
-
   $export['formblock_expose_tinyfile'] = $strongarm;
+
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'mobile_codes_settings';
+  $strongarm->value = array(
+    'url' => array(
+      'alias' => 1,
+      'bouncer' => 1,
+      'tinyfile' => 1,
+      'shorten' => 1,
+    ),
+  );
+  $export['mobile_codes_settings'] = $strongarm;
+
   $strongarm = new stdClass;
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
@@ -171,7 +186,7 @@ function tinyfile_strongarm() {
           'labelformat' => 'hidden',
         ),
       ),
-      'status' => 1,
+      'status' => 2,
       'region_styles' => array(
         'header' => '',
         'left' => '',
@@ -181,15 +196,15 @@ function tinyfile_strongarm() {
       ),
     ),
   );
-
   $export['nd_display_settings_tinyfile'] = $strongarm;
+
   $strongarm = new stdClass;
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'nd_type_tinyfile';
   $strongarm->value = 0;
-
   $export['nd_type_tinyfile'] = $strongarm;
+
   $strongarm = new stdClass;
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
@@ -197,8 +212,8 @@ function tinyfile_strongarm() {
   $strongarm->value = array(
     0 => 'status',
   );
-
   $export['node_options_tinyfile'] = $strongarm;
+
   $strongarm = new stdClass;
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
@@ -270,7 +285,21 @@ function tinyfile_strongarm() {
       'hidden' => 1,
     ),
   );
-
   $export['nodeformscols_field_placements_tinyfile_default'] = $strongarm;
+
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'shorten_service';
+  $strongarm->value = 'Drupal ShortURL module';
+  $export['shorten_service'] = $strongarm;
+
+  $strongarm = new stdClass;
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'shorten_www';
+  $strongarm->value = 0;
+  $export['shorten_www'] = $strongarm;
+
   return $export;
 }

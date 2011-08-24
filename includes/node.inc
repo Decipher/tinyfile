@@ -46,12 +46,15 @@ function tinyfile_node_form_after_build($element) {
  * Implements hook_tinyfile_nodeapi_alter() on behalf of node.module.
  */
 function node_tinyfile_nodeapi_alter($node, $op, $a3, $a4) {
-  if ($op == 'insert' && $node->type == 'tinyfile') {
-    $node->build_mode = 'tinyfile';
-    drupal_json(array(
-      'success' => TRUE,
-      'data' => node_view($node),
-    ));
-    exit;
+  if ($node->type == 'tinyfile') {
+    switch ($op) {
+      case 'insert':
+        $node->build_mode = 'tinyfile';
+        drupal_json(array(
+          'success' => TRUE,
+          'data' => node_view($node),
+        ));
+        exit;
+    }
   }
 }
