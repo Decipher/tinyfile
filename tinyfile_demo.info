@@ -1,0 +1,9 @@
+name = tinyFile demonstration
+description = A demonstration profile for the tinyFile module.
+core = 6.x
+
+; Dependencies
+dependencies[] = tinyfile
+
+; Variables
+variables[site_frontpage] = node/add/tinyfile
